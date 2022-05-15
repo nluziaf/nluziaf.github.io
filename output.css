@@ -805,7 +805,7 @@ body {
 @font-face {
   font-family: Galactic Simple;
 
-  src: url(galactic-simple.ttf);
+  src: url('../galactic-simple.ttf') format('truetype');
 }
 
 .font-nl {
