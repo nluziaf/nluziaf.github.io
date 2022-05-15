@@ -21,6 +21,11 @@ body {
     font-family: 'proxima_nova', sans-serif;
 }
 
+@font-face {
+  font-family: 'Galactic Simple';
+  src: url(./galactic-simple.ttf);
+}
+
 .font-nl {
     font-family: 'Galactic Simple', sans-serif;
 }
