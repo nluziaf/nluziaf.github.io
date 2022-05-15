@@ -542,6 +542,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: 0px;
 }
 
+.m-1 {
+  margin: 0.25rem;
+}
+
 .m-2 {
   margin: 0.5rem;
 }
@@ -703,14 +707,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-align: center;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .font-bold {
@@ -762,6 +771,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+.transition {
+  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .navbar-fixed {
   position: fixed;
   z-index: 9999;
@@ -783,6 +800,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 body {
   font-family: 'proxima_nova', sans-serif;
+}
+
+@font-face {
+  font-family: 'Galactic Simple';
+
+  src: url(./galactic-simple.ttf);
+}
+
+.font-nl {
+  font-family: 'Galactic Simple', sans-serif;
 }
 
 .hover\:border-red-500:hover {
