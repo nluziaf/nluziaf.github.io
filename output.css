@@ -665,10 +665,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
 }
 
-.bg-transparent {
-  background-color: transparent;
-}
-
 .bg-primary {
   --tw-bg-opacity: 1;
   background-color: rgb(52 211 153 / var(--tw-bg-opacity));
@@ -805,7 +801,7 @@ body {
 @font-face {
   font-family: Galactic Simple;
 
-  src: url('../galactic-simple.ttf') format('truetype');
+  src: url(./galactic-simple.ttf);
 }
 
 .font-nl {
